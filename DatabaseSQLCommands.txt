@@ -1,0 +1,9 @@
+CREATE DATABASE Game;
+CREATE TABLE [Users](
+[Id] INT PRIMARY KEY IDENTITY(1,1),
+[UserName] VARCHAR(50) UNIQUE NOT NULL,
+[Password] VARCHAR(15),
+[Points] INT,
+)
+INSERT INTO Users VALUES('rakesh','password',0);
+INSERT INTO Users VALUES('aman','password',0);
